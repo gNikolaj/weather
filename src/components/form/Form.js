@@ -23,7 +23,6 @@ const Form = () => {
     function setInfo(data) {
         setTemperature(Math.round(data.main.temp - 273.15));
         setCity(data.name);
-        setCountry(data.sys.country);
         setWeather(data.weather[0].main);
     }
 
