@@ -7,7 +7,6 @@ const Form = () => {
 
     const [temperature, setTemperature] = useState();
     const [city, setCity] = useState();
-    const [country, setCountry] = useState();
     const [weather, setWeather] = useState();
 
     const getWeather = async (e) => {
