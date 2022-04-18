@@ -36,7 +36,7 @@ const Form = () => {
                     <button><i className="fa-solid fa-magnifying-glass"/></button>
                 </form>
             </div>
-            {city && <Weather temperature={temperature} city={city} country={country} weather={weather}/>}
+            {city && <Weather temperature={temperature} city={city} weather={weather}/>}
         </div>
     );
 }

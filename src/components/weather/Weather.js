@@ -1,10 +1,11 @@
-const Weather = ({temperature, city, country, weather}) => {
+import './Weather.css'
+
+const Weather = ({temperature, city, weather}) => {
     return(
-        <div>
-            <h2>City: {city}</h2>
-            <h2>Temperature: {temperature}</h2>
-            <h2>Country: {country}</h2>
-            <h2>Weather: {weather}</h2>
+        <div className='weather-content'>
+            <h2>{city}</h2>
+            <h2>{temperature}&#8451;</h2>
+            <h2>{weather}</h2>
         </div>
     );
 }
