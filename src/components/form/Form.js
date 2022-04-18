@@ -7,7 +7,6 @@ const Form = () => {
 
     const [temperature, setTemperature] = useState();
     const [city, setCity] = useState();
-    const [country, setCountry] = useState();
     const [weather, setWeather] = useState();
 
     const getWeather = async (e) => {
@@ -17,6 +16,7 @@ const Form = () => {
             const api_url = await
                 fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`);
             const data = await api_url.json();
+            console.log(data);
             setInfo(data);
         }
     }
@@ -24,7 +24,6 @@ const Form = () => {
     function setInfo(data) {
         setTemperature(Math.round(data.main.temp - 273.15));
         setCity(data.name);
-        setCountry(data.sys.country);
         setWeather(data.weather[0].main);
     }
 
