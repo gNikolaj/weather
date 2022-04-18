@@ -16,6 +16,7 @@ const Form = () => {
             const api_url = await
                 fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`);
             const data = await api_url.json();
+            console.log(data);
             setInfo(data);
         }
     }
