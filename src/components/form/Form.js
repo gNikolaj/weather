@@ -27,11 +27,19 @@ const Form = () => {
         setWeather(data.weather[0].main);
     }
 
+    const changeInputColor = () => {
+        let inp = document.querySelector('input');
+        inp.style.backgroundColor = '#e8f0fe';
+        if (inp.value === '') {
+            inp.style.backgroundColor = '#A3D0C3';
+        }
+    }
+
     return(
         <div>
             <div className="form">
                 <form onSubmit={getWeather}>
-                    <input type="text" name="city" placeholder="Enter city..."/>
+                    <input onChange={changeInputColor} type="text" name="city" placeholder="Enter city..."/>
                     <button><i className="fa-solid fa-magnifying-glass"/></button>
                 </form>
             </div>
