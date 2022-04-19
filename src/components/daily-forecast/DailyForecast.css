@@ -1,0 +1,28 @@
+.daily-forecast {
+    background-color: #FAF5E4;
+    text-align: center;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.daily-forecast-h2 {
+    text-align: left;
+}
+
+.daily-forecast-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-elem {
+    background-color: #FAF5E4;
+    flex-basis: 20%;
+    justify-content: center;
+}
+
+.li-content, div, h3, span{
+    background-color: inherit;
+}

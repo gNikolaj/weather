@@ -1,24 +1,29 @@
 import './Form.css'
 
-const Form = ({temperature, city, weather}) => {
+const Form = ({temperature, city, weather, dailyData}) => {
     const API_KEY = '73c395f68c464eeec9bd8350ffa0461a';
 
     const getWeather = async (e) => {
         e.preventDefault();
         const city = e.target.elements.city.value;
         if (city) {
-            const api_url = await
-                fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`);
-            const data = await api_url.json();
-            console.log(data);
-            setInfo(data);
+            const current_api = await
+                fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
+            const currentWeather = await current_api.json();
+
+            const daily_api = await
+                fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=metric`);
+            const dailyForecast = await daily_api.json();
+
+            setInfo(currentWeather, dailyForecast);
         }
     }
 
-    function setInfo(data) {
-        temperature(Math.round(data.main.temp - 273.15));
+    function setInfo(data, daily_data) {
+        temperature(Math.round(data.main.temp));
         city(data.name);
         weather(data.weather[0].main);
+        dailyData(daily_data);
     }
 
     const changeInputColor = () => {
