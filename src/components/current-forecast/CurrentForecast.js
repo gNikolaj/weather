@@ -1,6 +1,6 @@
-import './Weather.css'
+import './CurrentForecast.css'
 
-const Weather = ({temperature, city, weather}) => {
+const CurrentForecast = ({temperature, city, weather}) => {
     return(
         <div className='weather-content'>
             <h2>{city}</h2>
@@ -10,4 +10,4 @@ const Weather = ({temperature, city, weather}) => {
     );
 }
 
-export default Weather;
+export default CurrentForecast;

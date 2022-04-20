@@ -16,13 +16,3 @@
     list-style-type: none;
     padding: 0;
 }
-
-.list-elem {
-    background-color: #FAF5E4;
-    flex-basis: 20%;
-    justify-content: center;
-}
-
-.li-content, div, h3, span{
-    background-color: inherit;
-}
