@@ -10,7 +10,7 @@ function App() {
     const [dailyData, setDailyData] = useState();
 
     const background = document.querySelector("body");
-
+    
     const setBackground = () => {
         if (weather) {
             if (weather === 'Rain') {
