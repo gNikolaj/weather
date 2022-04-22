@@ -30,7 +30,7 @@ const Form = ({temperature, city, weather, dailyData}) => {
         let inp = document.querySelector('input');
         inp.style.backgroundColor = '#e8f0fe';
         if (inp.value === '') {
-            inp.style.backgroundColor = '#A3D0C3';
+            inp.style.backgroundColor = '#86C6F4';
         }
     }
 

@@ -1,16 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@700&display=swap');
+
 body {
-  background-color: #78938A;
+  background-image: url("https://cdn.oboi7.com/content/images/bb/e4/bbe4f6f684929b8c46fa75f9646e54165b3c647c.png");
   background-size: 100%;
-  justify-content: center;
+  color: #DFDFDE;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Akshar', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

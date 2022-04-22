@@ -6,18 +6,17 @@
 }
 
 i {
-    background-color: #A3D0C3;
+    background-color: #86C6F4;
 }
 form {
     position: relative;
     margin-top: 10px;
     width: 300px;
-    background: #A3D0C3;
 }
 input, button {
     border: none;
     outline: none;
-    background-color: #A3D0C3;
+    background-color: #86C6F4;
 }
 input {
     width: 100%;
